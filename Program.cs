@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
@@ -13,6 +14,24 @@ namespace MultiPlatformTextEditorCore
     {
         public static void Main(string[] args)
         {
+            /*
+            if (args.Length == 0)
+            {
+                Console.WriteLine("Please specify file name you want to edit.");
+                Console.WriteLine("Note: if file doesn't exists it will be created.");
+                return;
+            }
+
+            var fileName = args[0];
+            if (!File.Exists(fileName))
+            {
+                using (File.Create(fileName)) {}
+            }
+            */
+            string fileName = "README.md";
+            FileController.Init(fileName);
+            //var fi = new FileInfo(fileName);
+
             CreateHostBuilder(args).Build().Run();
         }
 
