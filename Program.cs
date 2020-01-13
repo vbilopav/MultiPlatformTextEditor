@@ -14,7 +14,6 @@ namespace MultiPlatformTextEditorCore
     {
         public static void Main(string[] args)
         {
-            /*
             if (args.Length == 0)
             {
                 Console.WriteLine("Please specify file name you want to edit.");
@@ -27,10 +26,8 @@ namespace MultiPlatformTextEditorCore
             {
                 using (File.Create(fileName)) {}
             }
-            */
-            string fileName = "README.md";
             FileController.Init(fileName);
-            //var fi = new FileInfo(fileName);
+
 
             CreateHostBuilder(args).Build().Run();
         }
