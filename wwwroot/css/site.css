@@ -16,7 +16,7 @@ body > div {
     height: 100%;
     display: grid;
     overflow: hidden;
-    grid-template-rows: 48px auto;
+    grid-template-rows: 58px auto;
     grid-template-areas: 'header' 'editor';
 }
 

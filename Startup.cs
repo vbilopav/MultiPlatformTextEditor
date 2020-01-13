@@ -31,6 +31,11 @@ namespace MultiPlatformTextEditorCore
         {
             app.UseRouting();
             app.UseEndpoints(endpoints => endpoints.MapControllers());
+
+
+            //app.UseDefaultFiles();
+            //app.UseStaticFiles();
+
             app.UseResourceMiddleware();
         }
     }
