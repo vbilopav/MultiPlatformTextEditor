@@ -31,18 +31,7 @@ namespace MultiPlatformTextEditorCore
         {
             app.UseRouting();
             app.UseEndpoints(endpoints => endpoints.MapControllers());
-
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                
-            }
-
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
+            app.UseResourceMiddleware();
         }
     }
 }

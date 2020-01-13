@@ -22,8 +22,8 @@ namespace MultiPlatformTextEditorCore
         [HttpGet]
         public string Get()
         {
-            this.Response.Headers.Add("file-name", Info.Name);
-            this.Response.Headers.Add("full-name", Info.FullName);
+            this.Response.Headers.Add("x-file-name", Info.Name);
+            this.Response.Headers.Add("x-full-name", Info.FullName);
 
             lock (LockObject)
             {

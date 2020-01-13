@@ -9,12 +9,13 @@
     badge.style["display"] = "none";
 
     const response = await fetch(apiUrl);
-    const name = response.headers.get("file-name");
-    const fullName = response.headers.get("full-name");
+    const name = response.headers.get("x-file-name");
+    const fullName = response.headers.get("x-full-name");
 
     title.innerHTML = document.title = name;
-    title.setAttribute("title", fullName);
     subTitle.innerHTML = fullName;
+    title.setAttribute("title", fullName);
+    subTitle.setAttribute("title", fullName);
 
     editor.value = await response.text();
     editor.focus();
