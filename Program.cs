@@ -27,7 +27,8 @@ namespace MultiPlatformTextEditorCore
                 using (File.Create(fileName)) {}
             }
             FileController.Init(fileName);
-
+            
+            //FileController.Init("README.md");
 
             CreateHostBuilder(args).Build().Run();
         }

@@ -93,7 +93,7 @@ namespace MultiPlatformTextEditorCore {
         ///    height: 100%;
         ///    display: grid;
         ///    overflow: hidden;
-        ///    grid-template-rows: 48px auto;
+        ///    grid-template-rows: 58px auto;
         ///    grid-template-areas: &apos;header&apos; &apos;editor&apos;;
         ///}
         ///
@@ -162,8 +162,8 @@ namespace MultiPlatformTextEditorCore {
         ///    badge.style[&quot;display&quot;] = &quot;none&quot;;
         ///
         ///    const response = await fetch(apiUrl);
-        ///    const name = response.headers.get(&quot;file-name&quot;);
-        ///    const fullName = response.headers.get(&quot;full-n [rest of string was truncated]&quot;;.
+        ///    const name = response.headers.get(&quot;x-file-name&quot;);
+        ///    const fullName = response.headers.get(&quot;x-fu [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string _js_site_js {
             get {
